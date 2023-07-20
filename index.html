@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Snake</title>
+   <link rel="stylesheet" href="styles.css">
+   <script src="game.js" defer type="module"></script>
+   </script>
+
+</head>
+<body>
+   <div id="game-container">
+      <div id="score"></div>
+      <div id="game-board"></div>
+      <div id="game-over">
+         <div id="game-over-content" class="game-over-content">
+            <h2>Game Over</h2>
+            <div id="username-container" class="hidden">
+                  <input type="text" id="username-input" placeholder="Enter your username">
+                  <button id="save-button">Save</button>
+            </div>
+            <div id="score-container" class="hidden">
+                  <p id="new-high-score"></p>
+                  <p id="your-score"></p>
+                  <p id="highest-score"></p>
+            </div>
+            <div id="buttons">
+               <button id="leaderboard-button" class="hidden">Top10</button>
+               <button id="replay-button" class="hidden">Replay</button>
+            </div>
+            <div id="leaderboard-container" class="hidden">
+               <h3>Leaderboard</h3>
+               <ul id="top-10-list">
+                  <li>first item</li>
+               </ul>
+               <button id="back-button">Go back</button>
+            </div>
+         </div>
+       </div>
+       
+   </div>
+   <audio id="eat-apple" src=".//sounds/20279__koops__apple_crunch_16.wav"></audio>
+   <audio id="new-record-sound" src=".//sounds/mixkit-game-level-completed-2059.wav"></audio>
+   <audio id="game-over-sound" src=".//sounds/mixkit-funny-fail-low-tone-2876.wav"></audio>
+</body>
+</html>
